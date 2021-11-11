@@ -1,18 +1,36 @@
 NOTES:
-
 - ToDos
-    - Add tests
-    - Add README
+    - Fix completed story showing indices instead of entered text
+    - Use docstrings instead of comments where it makes sense
+    - Make a GUI for the app
+        - Make design look better
+    - Add more stories
+    - Add a way of choosing the story we want, and changing value of currentStory dynamically?
+    - Add validation check for numbers and empty fields
+    - Make presentation slides
+        - To explain logic and workflow
+    - Do presentation test run (Friday morning - after the check-in)
+
+Done:
     - Function for pulling word types to be added from story 
     - Function for generating user input requests dynamically
-    - Function to replace word choices with words entered by the user 
-    - Add edge case handling + show error messages
-    - Make it a CLI app
-    - Do presentation test run (Friday morning - after the check-in) 
+    - Function to replace word choices with words entered by the user
+    - Add edge case handling
+        - Ensure input is string
+        - Ensure string isn't empty
 
-- Edge cases to manage 
-    - Ensure input is string
+Extra stuff (to do when we have time):
+    - Add README
+        - create virtualenv to "isolate" application
+        - reinstall packages being used && pip freeze requirements
+            - PySimpleGUI
+        - document how to correctly install app locally
+    - Add tests
+    - Add "Do it again!" and "New Game" buttons
+    - Clean up code
+        - Direct *.pyc files to __pycache__ folder
+        - Run PEP8 linter on the code
 
-Presenter
+Presenter:
     -  Aderinto
  
