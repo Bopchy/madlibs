@@ -1,6 +1,5 @@
 NOTES:
 - ToDos
-    - Fix completed story showing indices instead of entered text
     - Use docstrings instead of comments where it makes sense
     - Make a GUI for the app
         - Make design look better
@@ -12,6 +11,7 @@ NOTES:
     - Do presentation test run (Friday morning - after the check-in)
 
 Done:
+    - Fix completed story showing indices instead of entered text
     - Function for pulling word types to be added from story 
     - Function for generating user input requests dynamically
     - Function to replace word choices with words entered by the user

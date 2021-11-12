@@ -15,8 +15,9 @@ def create_fields():
 
 # Submit input to complete story
 def submit_input():
-    inputs = values_list
+    inputs = values_list.values()
     completeStory = finish_story(inputs, currentStory)
+    print(completeStory)
     layout = [[psg.Text(completeStory)]]
     window = psg.Window("Your story", layout, modal=True)
     choice = None # make this close
