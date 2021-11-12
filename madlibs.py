@@ -34,7 +34,7 @@ endGameButton = [[psg.Button("End Game", size=(30,1.5), font='Courier 14')]]
 
 # Create page layout
 layout = [
-    [psg.Text("Welcome to Neputune's Madlibs Game!", font='Courier 26', justification='center')],
+    [psg.Text("Welcome! Get ready to Lib It!", font='Courier 26', justification='center')],
     *create_fields(),
     [psg.Column(libItButton), psg.Column(endGameButton)]
 ]

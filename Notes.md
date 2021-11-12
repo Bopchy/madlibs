@@ -2,11 +2,11 @@ NOTES:
 - ToDos
     - Make a GUI for the app
         - Make design look better ~ have text and input be left and right aligned; underline heading
-    - Make presentation slides
-        - To explain logic and workflow
     - Do presentation test run (Friday morning - after the check-in)
 
 Done:
+    - Make presentation write up
+        - To explain logic and workflow
     - Use docstrings instead of comments where it makes sense
     - Fix completed story showing indices instead of entered text
     - Function for pulling word types to be added from story 
