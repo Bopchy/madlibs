@@ -2,14 +2,15 @@ NOTES:
 - ToDos
     - Make a GUI for the app
         - Make design look better
-    - Add more stories
-    - Add a way of choosing the story we want, and changing value of currentStory dynamically?
-    - Add validation check for numbers and empty fields
-    - Make presentation slides
-        - To explain logic and workflow
-    - Do presentation test run (Friday morning - after the check-in)
+    - Make presentation slides (let Joshua do this. You just edit README)
+        - To explain logic and workflow (draw what you have on your notebook + minimal text)
+    - Do presentation test run (Friday afternoon - after the mid-morning session)
+
+****
+- Add a way of choosing the story we want, and changing value of currentStory dynamically?
 
 Done:
+    - Add more stories
     - Use docstrings instead of comments where it makes sense
     - Fix completed story showing indices instead of entered text
     - Function for pulling word types to be added from story 
@@ -20,6 +21,7 @@ Done:
         - Ensure string isn't empty
 
 Extra stuff (to do when we have time):
+    - Add validation check for numbers and empty fields
     - Add README
         - create virtualenv to "isolate" application
         - reinstall packages being used && pip freeze requirements
@@ -32,5 +34,7 @@ Extra stuff (to do when we have time):
         - Run PEP8 linter on the code
 
 Presenter:
-    -  Aderinto
+    - Joshua
+    - Me (demo)
+    - Aderinto
  
