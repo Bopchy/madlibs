@@ -11,7 +11,7 @@ def create_fields():
     fields = get_word_types(currentStory)
     listToRender = []
     for field in fields:
-        listToRender.append([psg.Text("Enter a(n) {}: ".format(field), font='Courier 14'), psg.Input(size=(50,1), pad=(8, 8), font='Courier 14')])
+        listToRender.append([psg.Text("Enter a(n) {}: ".format(field.upper()), font='Courier 14'), psg.Input(size=(50,1), pad=(8, 8), font='Courier 14')])
     return listToRender
 
 def submit_input():
@@ -19,9 +19,9 @@ def submit_input():
 
     inputs = values_list.values()
     completeStory = finish_story(inputs, currentStory)
-    layout = [[psg.Text(completeStory)]]
-    window = psg.Window("Your story", layout, modal=True, margins=(150,150),)
-    choice = None # make this close
+    layout = [[psg.Text("{}".format(completeStory), size=(60, 15))]]
+    window = psg.Window("Your story", layout, margins=(15,15), font='Courier 18')
+    choice = None
     while True:
         event, values = window.read()
         if event == "End Game" or event == psg.WIN_CLOSED:
@@ -40,7 +40,7 @@ layout = [
 ]
 
 # Create window
-window = psg.Window("Madlibs", layout, margins=(200,30), element_justification='center')
+window = psg.Window("Madlibs", layout, margins=(60,30), element_justification='center')
 
 # Create an event loop
 while True:
