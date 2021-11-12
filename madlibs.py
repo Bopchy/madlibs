@@ -11,7 +11,7 @@ def create_fields():
     fields = get_word_types(currentStory)
     listToRender = []
     for field in fields:
-        listToRender.append([psg.Text("Enter a(n) {}: ".format(field)), psg.In()])
+        listToRender.append([psg.Text("Enter a(n) {}: ".format(field), font='Courier 14'), psg.Input(size=(50,1), pad=(8, 8), font='Courier 14')])
     return listToRender
 
 def submit_input():
@@ -19,9 +19,8 @@ def submit_input():
 
     inputs = values_list.values()
     completeStory = finish_story(inputs, currentStory)
-    print(completeStory)
     layout = [[psg.Text(completeStory)]]
-    window = psg.Window("Your story", layout, modal=True)
+    window = psg.Window("Your story", layout, modal=True, margins=(150,150),)
     choice = None # make this close
     while True:
         event, values = window.read()
@@ -30,16 +29,18 @@ def submit_input():
 
     window.close()
 
+libItButton = [[psg.Button("Lib It!", size=(30,1.5), font='Courier 14')]]
+endGameButton = [[psg.Button("End Game", size=(30,1.5), font='Courier 14')]]
+
 # Create page layout
 layout = [
-    [psg.Text("Madlibs Game")],
-    [psg.Button("End Game")],
+    [psg.Text("Welcome to Neputune's Madlibs Game!", font='Courier 26', justification='center')],
     *create_fields(),
-    [psg.Button("Lib It!")],
+    [psg.Column(libItButton), psg.Column(endGameButton)]
 ]
 
 # Create window
-window = psg.Window("Madlibs", layout, margins=(500,400))
+window = psg.Window("Madlibs", layout, margins=(200,30), element_justification='center')
 
 # Create an event loop
 while True:

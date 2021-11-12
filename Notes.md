@@ -1,10 +1,7 @@
 NOTES:
 - ToDos
     - Make a GUI for the app
-        - Make design look better
-    - Add more stories
-    - Add a way of choosing the story we want, and changing value of currentStory dynamically?
-    - Add validation check for numbers and empty fields
+        - Make design look better ~ have text and input be left and right aligned; underline heading
     - Make presentation slides
         - To explain logic and workflow
     - Do presentation test run (Friday morning - after the check-in)
@@ -20,6 +17,9 @@ Done:
         - Ensure string isn't empty
 
 Extra stuff (to do when we have time):
+    - Add more stories
+    - Add a way of choosing the story we want, and changing value of currentStory dynamically?
+    - Add validation check for numbers and empty fields
     - Add README
         - create virtualenv to "isolate" application
         - reinstall packages being used && pip freeze requirements
