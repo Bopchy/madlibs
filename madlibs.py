@@ -5,16 +5,18 @@ from utils import get_word_types, finish_story, input_is_valid
 # Current story
 currentStory = stories[1]
 
-# Create input fields
 def create_fields():
+    '''Create input fields'''
+
     fields = get_word_types(currentStory)
     listToRender = []
     for field in fields:
         listToRender.append([psg.Text("Enter a(n) {}: ".format(field)), psg.In()])
     return listToRender
 
-# Submit input to complete story
 def submit_input():
+    '''Submit input to complete story'''
+
     inputs = values_list.values()
     completeStory = finish_story(inputs, currentStory)
     print(completeStory)

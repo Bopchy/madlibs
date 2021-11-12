@@ -1,6 +1,5 @@
 NOTES:
 - ToDos
-    - Use docstrings instead of comments where it makes sense
     - Make a GUI for the app
         - Make design look better
     - Add more stories
@@ -11,6 +10,7 @@ NOTES:
     - Do presentation test run (Friday morning - after the check-in)
 
 Done:
+    - Use docstrings instead of comments where it makes sense
     - Fix completed story showing indices instead of entered text
     - Function for pulling word types to be added from story 
     - Function for generating user input requests dynamically
