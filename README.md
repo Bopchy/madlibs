@@ -4,31 +4,34 @@
 This madlibs project relies on the use of Python's string manipulation, Regex and PySimpleGUI to create an interface.
 
 The projects three main files are:
-    - _storyCollection.py_
+
+**_storyCollection.py_**
+
 This file contains an object of the stories available to the app. Note that the expected word types to be entered by the user are inside curly braces(`{}`).
 
-    - _utils.py_
-This contains the string manipulation and validation functions. Namely:
-- get_word_types(story)
+**_utils.py_**
+
+This contains the string manipulation and validation functions. 
+
+Namely:
+
+- **get_word_types(story)**
+    Uses regex to find all of the word types (i.e. adverbs, nouns, verbs) that a user needs to enter to complete a story. It then extracts them into a list that is presented to PySimpleGUI, so that the GUI can render the necessary user input fields.
+
+     `story` is a story from _storyCollection.py_
+
+- **finish_story(userInput, story)**
+    Accepts an array of the user input, then uses regex and string formatting to replace all of the expected word types in curly braces with the corresponding user input.
+
+     `userInput` is an array of the values entered by the user via the GUI
+     `story` is a story from _storyCollection.py_
+
+- **input_is_valid(input)**
+    Checks if `input` is an empty string, or a string that contains numbers.  
   
-  Uses regex to find all of the word types (i.e. adverbs, nouns, verbs) that a user needs to enter to complete a story. It then extracts them into a list that is presented to PySimpleGUI, so that the GUI can render the necessary user input fields.
+**_madlibs.py_**
 
-    - `story` is a story from _storyCollection.py_
-
-- finish_story(userInput, story)
-  
-  Accepts an array of the user input, then uses regex and string formatting to replace all of the expected word types in curly braces with the corresponding user input.
-
-    - `userInput` is an array of the values entered by the user via the GUI
-    - `story` is a story from _storyCollection.py_
-
-- input_is_valid(input)
-
-  Checks if `input` is an empty string, or a string that contains numbers.  
-  
-- _madlibs.py_
-
-    Renders the PySimpleGUI. Note that the input fields are dynamically rendered from a list of expected word types.
+Renders the PySimpleGUI. Note that the input fields are dynamically rendered from a list of expected word types.
 
 ## WIP
 The following functionalities are still a work in progress:
